@@ -28,6 +28,7 @@ jobs:
 
       - name: Run unit tests
         run: pytest -q
+        env: ${{ github.workspace }}
 
   sast-scan:
     name: SAST Scan and Quality Gate
